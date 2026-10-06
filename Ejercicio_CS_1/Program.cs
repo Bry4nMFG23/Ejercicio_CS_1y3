@@ -14,18 +14,37 @@ using System;
     Console.WriteLine($"La suma de {a} + {b} es: {Suma}");
 
     int Resta = a - b;
-    Console.WriteLine($"La resta de {a} + {b} es: {Resta}");
+    Console.WriteLine($"La resta de {a} - {b} es: {Resta}");
 
     int Multiplicacion = a * b;
     Console.WriteLine($"La multiplicacion de {a} * {b} es: {Multiplicacion}");
 
+   if(b != 0){
     decimal Division = (decimal) a / b;
     Console.WriteLine($"La division de {a} y {b} es: {Division}");
+   }
+   else{
+      Console.WriteLine("No puedes dividir entre 0!");
+   }
+
+   //Raiz de a
+   if(a >= 0){
 
     double RaizA = Math.Sqrt(a);
-    double RaizB = Math.Sqrt(b);
-    Console.WriteLine($"La raiz cuadrada de {a} es: {RaizA:F2}\nLa raiz cuadrada de {b} es: {RaizB:F2} ");
+    Console.WriteLine($"La raiz cuadrada de {a} es: {RaizA:F2}");
+   }
+   else{
+      Console.WriteLine("No se puede calcular la raiz de un negativo!");
+   }
 
+   //Raiz de b
+   if(b >= 0){
+    double RaizB = Math.Sqrt(b);
+    Console.WriteLine($"La raiz cuadrada de {a} es: {RaizB:F2}");
+   }
+   else{
+      Console.WriteLine("No se puede calcular la raiz de un negativo! ");
+   }
  }
 
- Operaciones(20, 40);
+ Operaciones(100, 50);
