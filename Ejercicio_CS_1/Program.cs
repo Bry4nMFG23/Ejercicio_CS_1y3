@@ -40,11 +40,11 @@ using System;
    //Raiz de b
    if(b >= 0){
     double RaizB = Math.Sqrt(b);
-    Console.WriteLine($"La raiz cuadrada de {a} es: {RaizB:F2}");
+    Console.WriteLine($"La raiz cuadrada de {b} es: {RaizB:F2}");
    }
    else{
       Console.WriteLine("No se puede calcular la raiz de un negativo! ");
    }
  }
 
- Operaciones(100, 50);
+ Operaciones(-5, 90);
